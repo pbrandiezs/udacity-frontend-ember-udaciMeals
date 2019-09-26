@@ -7,6 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('item', {path: 'item/:item_name'});
+  this.route('menu');
 });
 
 export default Router;
