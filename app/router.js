@@ -7,10 +7,10 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('menu');
   this.route('item', {path: 'item/:item_name'}, function() {
     this.route('nutrition');
   });
-  this.route('menu');
 });
 
 export default Router;
