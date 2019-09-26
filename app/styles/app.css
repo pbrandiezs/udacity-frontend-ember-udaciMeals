@@ -1,0 +1,5 @@
+ul > li {
+    display: inline-block;
+    padding:10px 1%;
+    width: 30%
+}
