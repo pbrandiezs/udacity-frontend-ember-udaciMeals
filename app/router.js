@@ -7,7 +7,9 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('item', {path: 'item/:item_name'});
+  this.route('item', {path: 'item/:item_name'}, function() {
+    this.route('nutrition');
+  });
   this.route('menu');
 });
 
